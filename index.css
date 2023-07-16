@@ -65,7 +65,7 @@ nav ul li a:hover:before {
 .container-img {
   width: 100vw;
   height: 100vh;
-  background: url(../img/birds.jpg) no-repeat;
+  background: url(birds.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -147,7 +147,7 @@ section {
 .text-container {
   width: 100vw;
   height: 100vh;
-  background: url(../img/dog.jpg) no-repeat;
+  background: url(dog.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
