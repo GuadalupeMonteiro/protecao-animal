@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <title>Proteção animal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="animate__animated animate__fadeIn animate__slower animate__delay-2s">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Denúncias</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </nav>
+        <div class="container-img">
+            <h1 class="animate__animated animate__fadeIn  animate__slower animate__delay-1s">Proteção animal <br> no
+                Brasil
+            </h1>
+            <div class="set-leaves">
+                <div><img src="img/leaf1.png" alt="folhas caindo das árvores"></div>
+                <div><img src="img/leaf2.png"></div>
+                <div><img src="img/leaf3.png"></div>
+                <div><img src="img/leaf4.png"></div>
+                <div><img src="img/leaf5.png"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 id="title">Somos uma equipe apaixonada pelos animais</h2>
+            <div class="text-container">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum eaque itaque
+                    necessitatibus? Minima recusandae tempora provident facere, tenetur quasi, voluptates aut molestiaenam magnam, quidem omnis alias animi voluptate.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let bg = document.querySelector('.text-container');
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            bg.style.clipPath = "circle(" + (value - 500) + "px at center)";
+        })
+    </script>
+</body>
+
+</html>
