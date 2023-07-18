@@ -12,6 +12,7 @@
 body {
   font-size: 62.5%;
   min-height: 1500px;
+  overflow-x: hidden;
   background-color: #fffae8;
 }
 
