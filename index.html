@@ -4,51 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ONG dedicada à proteção animal. Adote um animal. Seja um voluntário. Ajude sendo um doador">
+    <meta name="keywords" content="html,css,JavaScript,ONG,proteção animal">
+    <meta name="author" content="Guadalupe Monteiro">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css?v=1.1">
     <title>Proteção animal</title>
 </head>
 
 <body>
     <header>
-        <nav class="animate__animated animate__fadeIn animate__slower animate__delay-2s">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Denúncias</a></li>
-                <li><a href="#">Fale conosco</a></li>
+        <nav id="nav" class="animate__animated animate__fadeIn animate__slower animate__delay-2s">
+            <ul id="menu" role="menu">
+                <li><a href="#about" aria-label="Ir para seção sobre nós">Sobre nós</a></li>
+                <li><a href="#values" aria-label="Ir para seção nossos valores">Nossos valores</a></li>
+                <li><a href="#help-us" aria-label="Ir para seção ajude">Ajude</a></li>
             </ul>
+            <button id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span class="menu-stripe"></span>
+                <span class="menu-stripe"></span>
+                <span class="menu-stripe"></span>
+            </button>
         </nav>
-        <div class="container-img">
+        <div class="container-img" role="img" aria-label="Duas araras sobre galho de árvore">
             <h1 class="animate__animated animate__fadeIn  animate__slower animate__delay-1s">Proteção animal <br> no
                 Brasil
             </h1>
             <div class="set-leaves">
-                <div><img src="leaf1.png" alt="folhas caindo das árvores"></div>
-                <div><img src="leaf2.png" alt=""></div>
-                <div><img src="leaf3.png" alt=""></div>
-                <div><img src="leaf4.png" alt=""></div>
-                <div><img src="leaf5.png" alt=""></div>
+                <ul>
+                    <li><img src="assets/img/leaf1.png" alt="folhas caindo das árvores"></li>
+                    <li><img src="assets/img/leaf2.png" alt=""></li>
+                    <li><img src="assets/img/leaf3.png" alt=""></li>
+                    <li><img src="assets/img/leaf4.png" alt=""></li>
+                    <li><img src="assets/img/leaf5.png" alt=""></li>
+                </ul>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <h2 id="title">Somos uma equipe apaixonada pelos animais</h2>
+        <section id="about">
+            <h2 class="title">Somos uma equipe apaixonada pelos animais</h2>
             <div class="text-container">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum eaque itaque
-                    necessitatibus? Minima recusandae tempora provident facere, tenetur quasi, voluptates aut molestiaenam magnam, quidem omnis alias animi voluptate.</p>
+                <p class="text">Trabalhamos incansavelmente para proporcionar um lar seguro, reabilitar e encontrar lares amorosos para animais em situações vulneráveis. Nossa missão é combater o abandono e garantir à proteção e bem-estar dos animais.</p>
+            </div>
+        </section>
+        <section class="flex" id="values">
+            <h2 class="title">Nossos valores</h2>
+            <div class="values-container">
+                <div class="values-wrapper">
+                    <div class="img-wrapper">
+                        <img src="assets/img/dog-person.webp" alt="mulher caminhando ao lado de um cachorro">
+                    </div>
+                    <div class="values-text">
+                        <h2>Compaixão</h2>
+                        <p>É o cerne dos nossos valores. Acreditamos que cada animal merece carinho e respeito, independentemente de sua espécie ou situação. Guiados por esse princípio, abordamos cada caso com empatia e dedicação, buscando proporcionar o melhor cuidado possível. Nossa missão é criar um ambiente onde todos os seres vivos sejam tratados com a compaixão e a atenção que merecem, garantindo assim o seu bem-estar e qualidade de vida.</p>
+                    </div>
+                </div>
+                <div class="values-wrapper">
+                    <div class="img-wrapper">
+                        <img src="assets/img/cat-person.webp" alt="pessoa tocando as patas de um gato">
+                    </div>
+                    <div class="values-text">
+                        <h2>Compromisso</h2>
+                        <p>É um pilar fundamental dos nossos valores. Tanto nossa equipe quanto nossos voluntários são impelidos por uma determinação inabalável em criar um impacto positivo na vida dos animais. Estamos dedicados a ir além, a trabalhar incansavelmente para assegurar que cada ser vivo receba o cuidado, a proteção e o carinho que merece. Nosso compromisso é uma promessa constante de fazer a diferença, unindo esforços e recursos para construir um mundo onde os animais sejam valorizados e respeitados.</p>
+                    </div>
+                </div>
+                <div class="values-wrapper">
+                    <div class="img-wrapper">
+                        <img src="assets/img/horse.webp" alt="criança beijando cavalo">
+                    </div>
+                    <div class="values-text">
+                        <h2>Educação</h2>
+                        <p>Acreditamos firmemente que a educação desempenha um papel crucial na construção de um mundo onde animais e seres humanos coexistem de forma harmoniosa. Buscamos não apenas fornecer informações, mas também promover a compreensão profunda das necessidades e dos direitos dos animais. Através da educação, aspiramos a cultivar um respeito mútuo entre todas as formas de vida, capacitando as pessoas a fazerem escolhas informadas e compassivas que beneficiem tanto os animais quanto o nosso planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="help-us">
+            <h2 class="title">Como você pode fazer a diferença</h2>
+            <div class="hexagon-wrapper">
+                <a href="#" class="hexagon flex hexagon-text" aria-label="Mulher beijando cachorro com link para página adoção">Adote</a>
+                <a href="#" class="hexagon flex hexagon-text" aria-label="Grupo de pessoas de mãos dadas com link para página doação">Doe</a>
+                <a href="#" class="hexagon flex hexagon-text"
+                    aria-label="Broche escrito voluntário na camisa de uma pessoa com link para página voluntariar-se">Voluntarie-se</a>
             </div>
         </section>
     </main>
-
-    <script>
-        let bg = document.querySelector('.text-container');
-        window.addEventListener('scroll', () => {
-            let value = window.scrollY;
-            bg.style.clipPath = "circle(" + (value - 500) + "px at center)";
-        })
-    </script>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/GuadalupeMonteiro" target="_blank">Guadalupe Monteiro</a></p>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
