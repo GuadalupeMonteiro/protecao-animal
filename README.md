@@ -43,3 +43,7 @@ Authorial project for an animal NGO.
 - I tried to test the site on a local web server with Node.js;
 - To improve the user experience on smaller screens, I chose to add display none to the images in nossos valores section;
 - Checked the website performance metrics using lighthouse.
+
+## Deploy
+
+https://guadalupemonteiro.github.io/protecao-animal/
