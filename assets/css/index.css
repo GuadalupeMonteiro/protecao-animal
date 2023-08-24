@@ -68,7 +68,7 @@ nav ul li a:hover:before {
 }
 
 nav ul li a:focus {
-  border: 1px solid aliceblue;
+  border-bottom: 1px solid aliceblue;
 }
 
 #btn-menu {
