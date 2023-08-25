@@ -204,6 +204,7 @@ section {
 
 .values-container {
   width: 70%;
+  max-width: 60rem;
   margin-bottom: 5rem;
   padding: 1rem 2rem 3.5rem;
   border-radius: 10px;
